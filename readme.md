@@ -1,7 +1,7 @@
-# Measuring COVID Recovery through Reservations for In-person Dining using OpenTable Data
+# Visualizing COVID Recovery through Reservations for In-person Dining using OpenTable Data
 
 ## Tutorial
-Youtube screenshot to be embedded here.
+![Video Tutorial for creating the visualization](https://raw.githubusercontent.com/ideaOwl/betacityyeg-dive-opentable/main/images/tutorial-preview.png)
 
 
 ## Data Files
