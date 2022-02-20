@@ -1,0 +1,1557 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20204.21.0818.1952                               -->
+<workbook source-build='2020.4.8 (20204.21.0818.1952)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='unpivoted-opentable-seated-diner-data' inline='true' name='federated.1jk51o30c0q38z17i5xct1vbihmt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='unpivoted-opentable-seated-diner-data' name='textscan.1ry7wvs1aq3h681fy599811hm527'>
+            <connection class='textscan' directory='U:/30_codebase/ideaMachina/betacityyeg-dive-opentable/data' filename='unpivoted-opentable-seated-diner-data.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='covid-19-alberta-statistics-summary-data (1)' name='textscan.09740gt08mwpt813daqe50itn9f4'>
+            <connection class='textscan' directory='C:/Users/Eugene Chen/Downloads' filename='covid-19-alberta-statistics-summary-data (1).csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='covid-19-pandemic-response-alberta' name='textscan.0kqmfpp09uudqw16ni1gp0pn9wkg'>
+            <connection class='textscan' directory='U:/30_codebase/ideaMachina/betacityyeg-dive-opentable/data' filename='covid-19-pandemic-response-alberta.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.09740gt08mwpt813daqe50itn9f4' name='covid-19-alberta-statistics-summary-data (1).csv' table='[covid-19-alberta-statistics-summary-data (1)#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='date' name='Date reported to Alberta Health' ordinal='1' />
+            <column datatype='integer' name='Number of lab tests' ordinal='2' />
+            <column datatype='integer' name='Cumulative number of lab tests' ordinal='3' />
+            <column datatype='integer' name='Number of cases' ordinal='4' />
+            <column datatype='integer' name='Cumulative number of cases' ordinal='5' />
+            <column datatype='integer' name='Active cases' ordinal='6' />
+            <column datatype='integer' name='Currently hospitalized' ordinal='7' />
+            <column datatype='integer' name='Currently in ICU' ordinal='8' />
+            <column datatype='integer' name='Cumulative number of deaths' ordinal='9' />
+            <column datatype='integer' name='Number of deaths' ordinal='10' />
+            <column datatype='integer' name='Number of variants of concern' ordinal='11' />
+            <column datatype='real' name='Percent positivity' ordinal='12' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.1ry7wvs1aq3h681fy599811hm527' name='unpivoted-opentable-seated-diner-data.csv' table='[unpivoted-opentable-seated-diner-data#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Type' ordinal='1' />
+              <column datatype='string' name='Name' ordinal='2' />
+              <column datatype='date' name='date' ordinal='3' />
+              <column datatype='real' name='change_from_2019' ordinal='4' />
+            </columns>
+          </relation>
+          <relation connection='textscan.09740gt08mwpt813daqe50itn9f4' name='covid-19-alberta-statistics-summary-data (1).csv' table='[covid-19-alberta-statistics-summary-data (1)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='date' name='Date reported to Alberta Health' ordinal='1' />
+              <column datatype='integer' name='Number of lab tests' ordinal='2' />
+              <column datatype='integer' name='Cumulative number of lab tests' ordinal='3' />
+              <column datatype='integer' name='Number of cases' ordinal='4' />
+              <column datatype='integer' name='Cumulative number of cases' ordinal='5' />
+              <column datatype='integer' name='Active cases' ordinal='6' />
+              <column datatype='integer' name='Currently hospitalized' ordinal='7' />
+              <column datatype='integer' name='Currently in ICU' ordinal='8' />
+              <column datatype='integer' name='Cumulative number of deaths' ordinal='9' />
+              <column datatype='integer' name='Number of deaths' ordinal='10' />
+              <column datatype='integer' name='Number of variants of concern' ordinal='11' />
+              <column datatype='real' name='Percent positivity' ordinal='12' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0kqmfpp09uudqw16ni1gp0pn9wkg' name='covid-19-pandemic-response-alberta.csv' table='[covid-19-pandemic-response-alberta#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+              <column datatype='date' name='Date' ordinal='0' />
+              <column datatype='string' name='Type' ordinal='1' />
+              <column datatype='string' name='Note' ordinal='2' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Active cases]' value='[covid-19-alberta-statistics-summary-data (1).csv].[Active cases]' />
+          <map key='[Cumulative number of cases]' value='[covid-19-alberta-statistics-summary-data (1).csv].[Cumulative number of cases]' />
+          <map key='[Cumulative number of deaths]' value='[covid-19-alberta-statistics-summary-data (1).csv].[Cumulative number of deaths]' />
+          <map key='[Cumulative number of lab tests]' value='[covid-19-alberta-statistics-summary-data (1).csv].[Cumulative number of lab tests]' />
+          <map key='[Currently hospitalized]' value='[covid-19-alberta-statistics-summary-data (1).csv].[Currently hospitalized]' />
+          <map key='[Currently in ICU]' value='[covid-19-alberta-statistics-summary-data (1).csv].[Currently in ICU]' />
+          <map key='[Date reported to Alberta Health]' value='[covid-19-alberta-statistics-summary-data (1).csv].[Date reported to Alberta Health]' />
+          <map key='[Date]' value='[covid-19-pandemic-response-alberta.csv].[Date]' />
+          <map key='[F1 (covid-19-alberta-statistics-summary-data (1).csv)]' value='[covid-19-alberta-statistics-summary-data (1).csv].[F1]' />
+          <map key='[F1]' value='[unpivoted-opentable-seated-diner-data.csv].[F1]' />
+          <map key='[Name]' value='[unpivoted-opentable-seated-diner-data.csv].[Name]' />
+          <map key='[Note]' value='[covid-19-pandemic-response-alberta.csv].[Note]' />
+          <map key='[Number of cases]' value='[covid-19-alberta-statistics-summary-data (1).csv].[Number of cases]' />
+          <map key='[Number of deaths]' value='[covid-19-alberta-statistics-summary-data (1).csv].[Number of deaths]' />
+          <map key='[Number of lab tests]' value='[covid-19-alberta-statistics-summary-data (1).csv].[Number of lab tests]' />
+          <map key='[Number of variants of concern]' value='[covid-19-alberta-statistics-summary-data (1).csv].[Number of variants of concern]' />
+          <map key='[Percent positivity]' value='[covid-19-alberta-statistics-summary-data (1).csv].[Percent positivity]' />
+          <map key='[Type (covid-19-pandemic-response-alberta.csv)]' value='[covid-19-pandemic-response-alberta.csv].[Type]' />
+          <map key='[Type]' value='[unpivoted-opentable-seated-diner-data.csv].[Type]' />
+          <map key='[change_from_2019]' value='[unpivoted-opentable-seated-diner-data.csv].[change_from_2019]' />
+          <map key='[date]' value='[unpivoted-opentable-seated-diner-data.csv].[date]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[unpivoted-opentable-seated-diner-data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[covid-19-pandemic-response-alberta.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[unpivoted-opentable-seated-diner-data.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[unpivoted-opentable-seated-diner-data.csv_59E6C24F382B492986DA8B2D3A29479A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type]</local-name>
+            <parent-name>[unpivoted-opentable-seated-diner-data.csv]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[unpivoted-opentable-seated-diner-data.csv_59E6C24F382B492986DA8B2D3A29479A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Name]</local-name>
+            <parent-name>[unpivoted-opentable-seated-diner-data.csv]</parent-name>
+            <remote-alias>Name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[unpivoted-opentable-seated-diner-data.csv_59E6C24F382B492986DA8B2D3A29479A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date]</local-name>
+            <parent-name>[unpivoted-opentable-seated-diner-data.csv]</parent-name>
+            <remote-alias>date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[unpivoted-opentable-seated-diner-data.csv_59E6C24F382B492986DA8B2D3A29479A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>change_from_2019</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[change_from_2019]</local-name>
+            <parent-name>[unpivoted-opentable-seated-diner-data.csv]</parent-name>
+            <remote-alias>change_from_2019</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[unpivoted-opentable-seated-diner-data.csv_59E6C24F382B492986DA8B2D3A29479A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (covid-19-alberta-statistics-summary-data (1).csv)]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date reported to Alberta Health</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date reported to Alberta Health]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>Date reported to Alberta Health</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of lab tests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of lab tests]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>Number of lab tests</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cumulative number of lab tests</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cumulative number of lab tests]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>Cumulative number of lab tests</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of cases]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>Number of cases</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cumulative number of cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cumulative number of cases]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>Cumulative number of cases</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Active cases</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Active cases]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>Active cases</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Currently hospitalized</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Currently hospitalized]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>Currently hospitalized</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Currently in ICU</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Currently in ICU]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>Currently in ICU</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cumulative number of deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cumulative number of deaths]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>Cumulative number of deaths</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of deaths</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of deaths]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>Number of deaths</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of variants of concern</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of variants of concern]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>Number of variants of concern</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Percent positivity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Percent positivity]</local-name>
+            <parent-name>[covid-19-alberta-statistics-summary-data (1).csv]</parent-name>
+            <remote-alias>Percent positivity</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[covid-19-pandemic-response-alberta.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-pandemic-response-alberta.csv_B1B140F9A92A4569BF806E402076E711]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Type (covid-19-pandemic-response-alberta.csv)]</local-name>
+            <parent-name>[covid-19-pandemic-response-alberta.csv]</parent-name>
+            <remote-alias>Type</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-pandemic-response-alberta.csv_B1B140F9A92A4569BF806E402076E711]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Note</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Note]</local-name>
+            <parent-name>[covid-19-pandemic-response-alberta.csv]</parent-name>
+            <remote-alias>Note</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[covid-19-pandemic-response-alberta.csv_B1B140F9A92A4569BF806E402076E711]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Date1' datatype='date' name='[Date]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='covid-19-alberta-statistics-summary-data (1).csv' datatype='table' name='[__tableau_internal_object_id__].[covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='covid-19-pandemic-response-alberta.csv' datatype='table' name='[__tableau_internal_object_id__].[covid-19-pandemic-response-alberta.csv_B1B140F9A92A4569BF806E402076E711]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='unpivoted-opentable-seated-diner-data.csv' datatype='table' name='[__tableau_internal_object_id__].[unpivoted-opentable-seated-diner-data.csv_59E6C24F382B492986DA8B2D3A29479A]' role='measure' type='quantitative' />
+      <column caption='Change From 2019' datatype='real' name='[change_from_2019]' role='measure' type='quantitative' />
+      <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+      <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+      <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+      <group hidden='true' name='[Exclusions (DAY(Date),Name)]' name-style='unqualified' user:auto-column='exclude'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tdy:date:qk]' />
+          <groupfilter function='level-members' level='[none:Name:nk]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='3' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Name:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Calgary&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Colorado&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;London&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Ohio&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;San Antonio&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Alabama&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Atlanta&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Fort Lauderdale&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Nevada&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;New Jersey&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;New Orleans&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Utah&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Beverly Hills&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Global&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Houston&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Phoenix&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Rhineland-Palatinate&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Cincinnati&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;District of Columbia&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Kentucky&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Miami&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Rhode Island&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Scottsdale&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bavaria&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Cambridge (US)&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Jalisco&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Los Angeles&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Oklahoma&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;San Diego&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Boca Raton&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Illinois&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Indianapolis&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;North Carolina&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Pittsburgh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Wisconsin&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Dublin&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Lower Saxony&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Naples (US)&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Quebec&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Vancouver&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Alberta&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Austin&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Frankfurt am Main&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Manitoba&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;New Mexico&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;New York&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Dallas&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Hesse&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Louisiana&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Montréal&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Tennessee&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Toronto&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Baden-Württemberg&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Boston&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Indiana&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kansas City&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;North Rhine-Westphalia&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Portland&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Ciudad de México&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Hawaii&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Miami Beach&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Minnesota&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Pennsylvania&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Seattle&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;British Columbia&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Cleveland&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Milwaukee&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Missouri&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Saxony&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;St. Louis&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;California&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Denver&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;München&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Nebraska&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Texas&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Tucson&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Edmonton (CA)&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Maine&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Nashville&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Queensland&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Washington&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Charlotte&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Connecticut&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Kansas&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Louisville&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Ontario&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;San Francisco&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Baja California Sur&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Brooklyn&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Las Vegas&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Mexico City&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Nuevo Leon&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Raleigh&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Arizona&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Baltimore&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Hamburg&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Maryland&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Orlando&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Quintana Roo&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Victoria&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Columbus&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Florida&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Minneapolis&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;New Hampshire&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;South Carolina&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Tampa&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Chicago&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Delaware&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Manchester (UK)&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Michigan&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Oregon&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;San Pedro Garza García&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Berlin&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Honolulu&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Massachusetts&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;New South Wales&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Philadelphia&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Virginia&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='covid-19-alberta-statistics-summary-data (1).csv' id='covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA'>
+            <properties context=''>
+              <relation connection='textscan.09740gt08mwpt813daqe50itn9f4' name='covid-19-alberta-statistics-summary-data (1).csv' table='[covid-19-alberta-statistics-summary-data (1)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='date' name='Date reported to Alberta Health' ordinal='1' />
+                  <column datatype='integer' name='Number of lab tests' ordinal='2' />
+                  <column datatype='integer' name='Cumulative number of lab tests' ordinal='3' />
+                  <column datatype='integer' name='Number of cases' ordinal='4' />
+                  <column datatype='integer' name='Cumulative number of cases' ordinal='5' />
+                  <column datatype='integer' name='Active cases' ordinal='6' />
+                  <column datatype='integer' name='Currently hospitalized' ordinal='7' />
+                  <column datatype='integer' name='Currently in ICU' ordinal='8' />
+                  <column datatype='integer' name='Cumulative number of deaths' ordinal='9' />
+                  <column datatype='integer' name='Number of deaths' ordinal='10' />
+                  <column datatype='integer' name='Number of variants of concern' ordinal='11' />
+                  <column datatype='real' name='Percent positivity' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='covid-19-pandemic-response-alberta.csv' id='covid-19-pandemic-response-alberta.csv_B1B140F9A92A4569BF806E402076E711'>
+            <properties context=''>
+              <relation connection='textscan.0kqmfpp09uudqw16ni1gp0pn9wkg' name='covid-19-pandemic-response-alberta.csv' table='[covid-19-pandemic-response-alberta#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='date' name='Date' ordinal='0' />
+                  <column datatype='string' name='Type' ordinal='1' />
+                  <column datatype='string' name='Note' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='unpivoted-opentable-seated-diner-data.csv' id='unpivoted-opentable-seated-diner-data.csv_59E6C24F382B492986DA8B2D3A29479A'>
+            <properties context=''>
+              <relation connection='textscan.1ry7wvs1aq3h681fy599811hm527' name='unpivoted-opentable-seated-diner-data.csv' table='[unpivoted-opentable-seated-diner-data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Type' ordinal='1' />
+                  <column datatype='string' name='Name' ordinal='2' />
+                  <column datatype='date' name='date' ordinal='3' />
+                  <column datatype='real' name='change_from_2019' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[date]' />
+              <expression op='[Date reported to Alberta Health]' />
+            </expression>
+            <first-end-point object-id='unpivoted-opentable-seated-diner-data.csv_59E6C24F382B492986DA8B2D3A29479A' />
+            <second-end-point object-id='covid-19-alberta-statistics-summary-data (1).csv_B87B2D4541A84C09B4589C2A6E1FD2AA' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[date]' />
+              <expression op='[Date]' />
+            </expression>
+            <first-end-point object-id='unpivoted-opentable-seated-diner-data.csv_59E6C24F382B492986DA8B2D3A29479A' />
+            <second-end-point object-id='covid-19-pandemic-response-alberta.csv_B1B140F9A92A4569BF806E402076E711' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='By Cities'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='unpivoted-opentable-seated-diner-data' name='federated.1jk51o30c0q38z17i5xct1vbihmt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jk51o30c0q38z17i5xct1vbihmt'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[change_from_2019]' derivation='Avg' name='[avg:change_from_2019:qk]' pivot='key' type='quantitative' />
+            <column caption='Change From 2019' datatype='real' name='[change_from_2019]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Type:nk]'>
+            <groupfilter function='member' level='[none:Type:nk]' member='&quot;city&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' />
+              <lod column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]</rows>
+        <cols>[federated.1jk51o30c0q38z17i5xct1vbihmt].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{61B792DE-2BDF-4A75-A3EF-9540B89DE449}' />
+    </worksheet>
+    <worksheet name='By Nations'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='unpivoted-opentable-seated-diner-data' name='federated.1jk51o30c0q38z17i5xct1vbihmt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jk51o30c0q38z17i5xct1vbihmt'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column-instance column='[change_from_2019]' derivation='Avg' name='[avg:change_from_2019:qk]' pivot='key' type='quantitative' />
+            <column caption='Change From 2019' datatype='real' name='[change_from_2019]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Australia&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Global&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Ireland&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Mexico&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' />
+              <lod column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]</rows>
+        <cols>[federated.1jk51o30c0q38z17i5xct1vbihmt].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{1F66A70D-81B6-4E00-8661-A55456699C31}' />
+    </worksheet>
+    <worksheet name='By States/Provinces'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='unpivoted-opentable-seated-diner-data' name='federated.1jk51o30c0q38z17i5xct1vbihmt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jk51o30c0q38z17i5xct1vbihmt'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Type]' role='dimension' type='nominal' />
+            <column-instance column='[change_from_2019]' derivation='Avg' name='[avg:change_from_2019:qk]' pivot='key' type='quantitative' />
+            <column caption='Change From 2019' datatype='real' name='[change_from_2019]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Type]' derivation='None' name='[none:Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Type:nk]'>
+            <groupfilter function='member' level='[none:Type:nk]' member='&quot;state&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' />
+              <lod column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]</rows>
+        <cols>[federated.1jk51o30c0q38z17i5xct1vbihmt].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{92EC591E-441D-4277-9D68-376436D8F55B}' />
+    </worksheet>
+    <worksheet name='Calgary and Edmonton'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='unpivoted-opentable-seated-diner-data' name='federated.1jk51o30c0q38z17i5xct1vbihmt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jk51o30c0q38z17i5xct1vbihmt'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column-instance column='[change_from_2019]' derivation='Avg' name='[avg:change_from_2019:qk]' pivot='key' type='quantitative' />
+            <column caption='Change From 2019' datatype='real' name='[change_from_2019]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Calgary&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Edmonton (CA)&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' />
+              <lod column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]</rows>
+        <cols>[federated.1jk51o30c0q38z17i5xct1vbihmt].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{786DAC0A-3E52-42BF-A1FE-5EC73FB32C52}' />
+    </worksheet>
+    <worksheet name='Calgary and Edmonton (2)'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='unpivoted-opentable-seated-diner-data' name='federated.1jk51o30c0q38z17i5xct1vbihmt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jk51o30c0q38z17i5xct1vbihmt'>
+            <column datatype='integer' name='[Currently hospitalized]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Note]' role='dimension' type='nominal' />
+            <column-instance column='[change_from_2019]' derivation='Avg' name='[avg:change_from_2019:qk]' pivot='key' type='quantitative' />
+            <column caption='Change From 2019' datatype='real' name='[change_from_2019]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Note]' derivation='None' name='[none:Note:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Currently hospitalized]' derivation='Sum' name='[sum:Currently hospitalized:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[date]' derivation='Day-Trunc' name='[tdy:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[Exclusions (DAY(Date),Name)]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='level-members' level='[tdy:date:qk]' />
+                <groupfilter function='level-members' level='[none:Name:nk]' />
+              </groupfilter>
+              <groupfilter function='crossjoin'>
+                <groupfilter function='member' level='[tdy:date:qk]' member='#2021-12-22 00:00:00#' />
+                <groupfilter function='union'>
+                  <groupfilter function='member' level='[none:Name:nk]' member='&quot;Calgary&quot;' />
+                  <groupfilter function='member' level='[none:Name:nk]' member='&quot;Edmonton (CA)&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]'>
+            <groupfilter function='member' level='[none:Name:nk]' member='&quot;Alberta&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]</column>
+            <column>[federated.1jk51o30c0q38z17i5xct1vbihmt].[Exclusions (DAY(Date),Name)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1jk51o30c0q38z17i5xct1vbihmt].[sum:Currently hospitalized:qk]' field-type='quantitative' fold='true' max='2616' min='-54' range-type='fixed' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jk51o30c0q38z17i5xct1vbihmt].[tdy:date:qk]' field-type='quantitative' max='#2022-01-07 22:19:42.349#' min='#2019-09-26 02:55:47.299#' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]' field-type='quantitative' max='2.4012966903567898' min='-1.2352443376676443' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]' value='p0%' />
+            <format attr='font-size' field='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Note:nk]' value='8' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Note:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1jk51o30c0q38z17i5xct1vbihmt].[sum:Currently hospitalized:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk] + [federated.1jk51o30c0q38z17i5xct1vbihmt].[sum:Currently hospitalized:qk])</rows>
+        <cols>[federated.1jk51o30c0q38z17i5xct1vbihmt].[tdy:date:qk]</cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true'>&lt;</run>
+              <run bold='true'>[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Note:nk]</run>
+              <run bold='true'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1jk51o30c0q38z17i5xct1vbihmt].[tdy:date:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]</field>
+                      <field>[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Note:nk]</field>
+                      <field>[federated.1jk51o30c0q38z17i5xct1vbihmt].[tdy:date:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>-0.01</value>
+                    <value>&quot;1st COIVD Case&quot;</value>
+                    <value>#2020-03-04 00:00:00#</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-1' y='-106' />
+          </annotation>
+          <annotation class='point' id='1' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run bold='true'>&lt;</run>
+              <run bold='true'>[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Note:nk]</run>
+              <run bold='true'>&gt;</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                        <field>[federated.1jk51o30c0q38z17i5xct1vbihmt].[tdy:date:qk]</field>
+                      </x-fields>
+                      <y-fields>
+                        <field>[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]</field>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]</field>
+                      <field>[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Note:nk]</field>
+                      <field>[federated.1jk51o30c0q38z17i5xct1vbihmt].[tdy:date:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>-0.23000000000000001</value>
+                    <value>&quot;Ban on large gatherings of 250 people, self isolation and monitoring for those travelling outside of Canada&quot;</value>
+                    <value>#2020-03-12 00:00:00#</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{1B83A386-305B-4BF4-A571-986EF27544FD}' />
+    </worksheet>
+    <worksheet name='Canada &amp; Canadian Cities'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='unpivoted-opentable-seated-diner-data' name='federated.1jk51o30c0q38z17i5xct1vbihmt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jk51o30c0q38z17i5xct1vbihmt'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column-instance column='[change_from_2019]' derivation='Avg' name='[avg:change_from_2019:qk]' pivot='key' type='quantitative' />
+            <column caption='Change From 2019' datatype='real' name='[change_from_2019]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Calgary&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Edmonton (CA)&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Montréal&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Toronto&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Vancouver&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' />
+              <lod column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]</rows>
+        <cols>[federated.1jk51o30c0q38z17i5xct1vbihmt].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{9B85EC75-87D4-402D-AFB7-E73D815C3F38}' />
+    </worksheet>
+    <worksheet name='Canada &amp; Canadian Provinces'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='unpivoted-opentable-seated-diner-data' name='federated.1jk51o30c0q38z17i5xct1vbihmt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1jk51o30c0q38z17i5xct1vbihmt'>
+            <column datatype='string' name='[Name]' role='dimension' type='nominal' />
+            <column-instance column='[change_from_2019]' derivation='Avg' name='[avg:change_from_2019:qk]' pivot='key' type='quantitative' />
+            <column caption='Change From 2019' datatype='real' name='[change_from_2019]' role='measure' type='quantitative' />
+            <column caption='Date' datatype='date' name='[date]' role='dimension' type='ordinal' />
+            <column-instance column='[Name]' derivation='None' name='[none:Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[date]' derivation='Month-Trunc' name='[tmn:date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Alberta&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;British Columbia&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Manitoba&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Ontario&quot;' />
+              <groupfilter function='member' level='[none:Name:nk]' member='&quot;Quebec&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]' value='p0%' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' />
+              <lod column='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1jk51o30c0q38z17i5xct1vbihmt].[avg:change_from_2019:qk]</rows>
+        <cols>[federated.1jk51o30c0q38z17i5xct1vbihmt].[tmn:date:qk]</cols>
+      </table>
+      <simple-id uuid='{4CD750C0-6EFE-4FD2-B918-47B22420EDD5}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='By Cities'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DF31EC69-9BBC-4904-AFDC-D94A435EED9A}' />
+    </window>
+    <window class='worksheet' name='By States/Provinces'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B34C55F8-ECE7-4226-A2F7-66B2F7D4BE39}' />
+    </window>
+    <window class='worksheet' name='By Nations'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A1AB99FD-44DB-4F9F-930D-492F1F9C4B03}' />
+    </window>
+    <window class='worksheet' name='Canada &amp; Canadian Cities'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{04ECB123-7907-4C2D-847A-DA48D1C7B8A4}' />
+    </window>
+    <window class='worksheet' name='Calgary and Edmonton'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A941A934-DCF9-4DF5-8734-C997AD7BF17A}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Calgary and Edmonton (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='4' param='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Note:nk]' show-title='false' type='size' />
+            <card param='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Note:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{885435CE-E29E-4523-B113-4E16814DC62A}' />
+    </window>
+    <window class='worksheet' name='Canada &amp; Canadian Provinces'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1jk51o30c0q38z17i5xct1vbihmt].[none:Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A9B29618-B93F-49A3-9254-F2B46984FD66}' />
+    </window>
+  </windows>
+</workbook>
